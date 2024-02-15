@@ -5,7 +5,7 @@
   --primary-background: #ffffff;
   --accent-color: #2196f3;
   --secondary-background: #f5f4fa;
-  --additional-background: #2f303a;
+  --additional-background: rgba(47, 48, 58, 0.4);
   --ligo-black: #000000;
   --header-border-color: #ececec;
   --card-border-color: #eeeeee;
@@ -145,11 +145,25 @@ header .logo {
 
 /* Герой */
 .hero {
-  padding: 200px 0;
-
   text-align: center;
+}
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  padding: 200px 0;
+  margin: 0 auto;
 
   background-color: var(--dark-bg-color);
+  background-image: linear-gradient(
+      to right,
+      var(--additional-background),
+      var(--additional-background)
+    ),
+    url("../images/hero/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-text {
@@ -261,6 +275,8 @@ header .logo {
 
 /* Наша команда */
 .our-team {
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -276,6 +292,7 @@ header .logo {
 .team-card {
   width: 270px;
   height: 428px;
+  background-color: var(--primary-background);
 
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -307,7 +324,10 @@ header .logo {
 
 /* Подвал */
 .main-footer {
+  max-width: 1600px;
+  height: 251px;
   padding: 60px 0 60px 215px;
+  margin: 0 auto;
 
   background-color: var(--dark-bg-color);
 }
@@ -403,6 +423,7 @@ address .location {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
+  border-radius: 0px, 0px, 4px, 4px;
   overflow: hidden;
 }
 
