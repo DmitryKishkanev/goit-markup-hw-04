@@ -450,6 +450,11 @@ address .location {
   border-left: 1px solid var(--card-border-color);
 }
 
+.card-image {
+  display: block;
+  width: 100%;
+}
+
 .card-content {
   padding: 20px 24px;
   border-right: 1px solid var(--card-border-color);
