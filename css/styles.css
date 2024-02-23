@@ -140,12 +140,28 @@ header .logo {
   letter-spacing: 0.28px;
 }
 
-.auth-nav .link::before {
+.email-link::before {
   content: "";
   width: 16px;
   height: 12px;
   margin-right: 10px;
   background-color: red;
+  /* background-image: url("../images/icon/envelope.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.phone-link::before {
+  content: "";
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  /* background-color: red; */
+  background-image: url("../images/icon/smartphone.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .auth-nav .link:hover,
