@@ -260,7 +260,8 @@ header .logo {
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  background-size: contain;
+  border-radius: 4px;
+  background-size: 70px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--secondary-background);
@@ -386,6 +387,7 @@ header .logo {
   align-items: center;
   width: 44px;
   height: 44px;
+  margin-bottom: 30px;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -431,6 +433,7 @@ header .logo {
   width: 170px;
   height: 92px;
   border: 1px solid var(--clients-border);
+  border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -515,6 +518,8 @@ address .location {
 }
 
 .networks-title {
+  margin-bottom: 20px;
+
   color: var(--networks-title);
 
   font-family: Roboto;
@@ -545,6 +550,22 @@ address .location {
 .footer-link:hover,
 .footer-link:focus {
   background-color: var(--accent-color);
+}
+
+.footer-instagram {
+  background-image: url("../images/icon/footer/footer-instagram.svg");
+}
+
+.footer-twitter {
+  background-image: url("../images/icon/footer/footer-Vector.svg");
+}
+
+.footer-facebook {
+  background-image: url("../images/icon/footer/footer-facebook.svg");
+}
+
+.footer-linkedin {
+  background-image: url("../images/icon/footer/footer-linkedin.svg");
 }
 
 /* Портфолио */
