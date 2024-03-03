@@ -222,6 +222,8 @@ header .logo {
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.96px;
+
+  cursor: pointer;
 }
 
 /* Преимущества */
@@ -268,19 +270,19 @@ header .logo {
 }
 
 .icon-antenna::before {
-  background-image: url("../images/icon/advantages/antenna.png");
+  background-image: url("../images/icon/advantages/antenna.svg");
 }
 
 .icon-clock::before {
-  background-image: url("../images/icon/advantages/clock.png");
+  background-image: url("../images/icon/advantages/clock.svg");
 }
 
 .icon-diagram::before {
-  background-image: url("../images/icon/advantages/diagram.png");
+  background-image: url("../images/icon/advantages/diagram.svg");
 }
 
 .icon-astronaut::before {
-  background-image: url("../images/icon/advantages/astronaut.png");
+  background-image: url("../images/icon/advantages/astronaut.svg");
 }
 
 .advantages-title {
@@ -389,6 +391,7 @@ header .logo {
   height: 44px;
   margin-bottom: 30px;
   border-radius: 50%;
+  background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -434,6 +437,7 @@ header .logo {
   height: 92px;
   border: 1px solid var(--clients-border);
   border-radius: 4px;
+  background-size: 106px 60px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -538,6 +542,7 @@ address .location {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-icon);
