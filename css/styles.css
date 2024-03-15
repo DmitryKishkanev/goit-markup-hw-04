@@ -13,6 +13,7 @@
   --networks-title: rgba(255, 255, 255, 1);
   --background-icon: rgba(255, 255, 255, 0.1);
   --clients-border: rgba(175, 177, 184, 1);
+  --icon-network: #afb1b8;
   --card-set-gap: 30px;
 
   --questionable: #f5f5f5;
@@ -138,34 +139,15 @@ header .logo {
 
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+  line-height: 1.2;
+  letter-spacing: 2%;
 }
 
-.email-link::before {
-  content: "";
-  width: 16px;
-  height: 12px;
+.auth-icon {
   margin-right: 10px;
 
-  background-image: url("../images/icon/heder/envelope.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  fill: currentColor;
 }
-
-.phone-link::before {
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-
-  background-image: url("../images/icon/heder/smartphone.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
@@ -257,32 +239,19 @@ header .logo {
   width: 270px;
 }
 
-.item-advantage::before {
-  content: "";
-  display: block;
-  height: 120px;
+.icon-box {
+  display: flex;
   margin-bottom: 30px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--secondary-background);
 }
 
-.icon-antenna::before {
-  background-image: url("../images/icon/advantages/antenna.svg");
-}
-
-.icon-clock::before {
-  background-image: url("../images/icon/advantages/clock.svg");
-}
-
-.icon-diagram::before {
-  background-image: url("../images/icon/advantages/diagram.svg");
-}
-
-.icon-astronaut::before {
-  background-image: url("../images/icon/advantages/astronaut.svg");
+.icon-advantage {
+  width: 70px;
+  height: 70px;
 }
 
 .advantages-title {
@@ -394,6 +363,7 @@ header .logo {
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: center;
+  color: var(--icon-network);
 }
 
 .team-link:not(:last-child) {
@@ -403,22 +373,14 @@ header .logo {
 .team-link:hover,
 .team-link:focus {
   background-color: var(--accent-color);
+  color: var(--primary-background);
 }
 
-.icon-instagram {
-  background-image: url("../images/icon/team/instagram.svg");
-}
+.icon-network {
+  width: 20px;
+  height: 20px;
 
-.icon-twitter {
-  background-image: url("../images/icon/team/Group.svg");
-}
-
-.icon-facebook {
-  background-image: url("../images/icon/team/facebook.svg");
-}
-
-.icon-linkedin {
-  background-image: url("../images/icon/team/linkedin.svg");
+  fill: currentColor;
 }
 
 /* Постоянные клиенты */
@@ -557,7 +519,12 @@ address .location {
   background-color: var(--accent-color);
 }
 
-.footer-instagram {
+.icon-footer {
+  width: 20px;
+  height: 20px;
+}
+
+/* .footer-instagram {
   background-image: url("../images/icon/footer/footer-instagram.svg");
 }
 
@@ -571,7 +538,7 @@ address .location {
 
 .footer-linkedin {
   background-image: url("../images/icon/footer/footer-linkedin.svg");
-}
+} */
 
 /* Портфолио */
 .portfolio {
