@@ -14,6 +14,7 @@
   --background-icon: rgba(255, 255, 255, 0.1);
   --clients-border: rgba(175, 177, 184, 1);
   --icon-network: #afb1b8;
+  --icon-logo: #afb1b8;
   --card-set-gap: 30px;
 
   --questionable: #f5f5f5;
@@ -402,6 +403,7 @@ header .logo {
   background-size: 106px 60px;
   background-repeat: no-repeat;
   background-position: center;
+  color: var(--icon-logo);
 }
 
 .logos-clients:not(:last-child) {
@@ -411,9 +413,17 @@ header .logo {
 .logos-clients:hover,
 .logos-clients:focus {
   border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-.first-client {
+.icon-logo {
+  width: 160px;
+  height: 60px;
+
+  fill: currentColor;
+}
+
+/* .first-client {
   background-image: url("../images/icon/clients/first-client.svg");
 }
 .second-client {
@@ -430,7 +440,7 @@ header .logo {
 }
 .sixth-client {
   background-image: url("../images/icon/clients/sixth-client.svg");
-}
+} */
 
 /* Подвал */
 .main-footer {
@@ -523,22 +533,6 @@ address .location {
   width: 20px;
   height: 20px;
 }
-
-/* .footer-instagram {
-  background-image: url("../images/icon/footer/footer-instagram.svg");
-}
-
-.footer-twitter {
-  background-image: url("../images/icon/footer/footer-Vector.svg");
-}
-
-.footer-facebook {
-  background-image: url("../images/icon/footer/footer-facebook.svg");
-}
-
-.footer-linkedin {
-  background-image: url("../images/icon/footer/footer-linkedin.svg");
-} */
 
 /* Портфолио */
 .portfolio {
